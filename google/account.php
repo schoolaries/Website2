@@ -52,7 +52,7 @@ if(isset($_POST["sub"])) {
 	
 	if($email_check) //check condition to fuifill preg_match
 	{
-		$conn = mysqli_connect("localhost","root","","demos");
+		$conn = mysqli_connect("localhost","root","P@ssw0rd!","demos");
 		
 		$query = $conn->prepare("INSERT INTO newsletter (Email) VALUES (?)");
 		$query->bind_param('s',$email);
