@@ -15,7 +15,7 @@ if(!isset($_SERVER['HTTPS'])){
 ?>
 <?php
 
-$conn = mysqli_connect("localhost","root","","demos");
+$conn = mysqli_connect("localhost","root","P@ssw0rd!","demos");
 
 $storedid = $_SESSION['uid'];
 if(isset($_POST["updateAcc"])) {
