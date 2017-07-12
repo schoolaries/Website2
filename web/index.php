@@ -34,28 +34,23 @@ $conn->close();
 
 }
 	
-$message="";
 if(!empty($_POST["login"])) {
 	$conn = mysqli_connect("localhost","root","123","Shop")
 	or die('Error Connecting to Database on the SQL Server');
 	//session_start();
 	$email=$_POST['email'];
 	$password=$_POST['password'];
-	//echo $email;
-	//echo $password;
-	$query = "SELECT name FROM user WHERE email='$email' AND password='$password'";
-	$res = mysqli_query($conn,$query);
- 
-	 if (mysqli_num_rows($res) == 1) {
-                $row = mysqli_fetch_array($res);
-		echo $row;
-		header("Location: index.php");
+
+	$query = mysqli_query($conn,'SELECT name FROM user WHERE email="'.$email.'" AND password="'.$password.'"');
+
+	 if (mysqli_num_rows($query) == 1) {
+                $_SESSION['email'] = $email;
+		header("Location: index2.php");
 	}
+	else
+		echo "Account's invalid";
+
 }
-
-
-
-
 
 ?>
 
