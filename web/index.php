@@ -33,23 +33,26 @@ if (!empty($_POST['signup']))
 $conn->close();
 
 }
-	
-if(!empty($_POST["login"])) {
+if(!empty($_POST["login"])) 
+{
 	$conn = mysqli_connect("localhost","root","123","Shop")
 	or die('Error Connecting to Database on the SQL Server');
-	//session_start();
 	$email=$_POST['email'];
 	$password=$_POST['password'];
 
 	$query = mysqli_query($conn,'SELECT name FROM user WHERE email="'.$email.'" AND password="'.$password.'"');
-
-	 if (mysqli_num_rows($query) == 1) {
-                $_SESSION['email'] = $email;
-		header("Location: index2.php");
+	$name = mysqli_fetch_row($query);
+	if (mysqli_num_rows($query) == 1) 
+	{
+		session_start();
+		$user = $_SESSION['name'] = $name[0];
+		//header("Location: index.php");
 	}
 	else
-		echo "Account's invalid";
-
+	{
+		echo "<script type='text/javascript'>alert('Email or password is incorrect.')</script>";
+	}
+$conn->close();
 }
 
 ?>
@@ -79,8 +82,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header" id="home">
 	<div class="container">
 		<ul>
+			<?php if(!isset($_SESSION['name'])){ ?>
 		    <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
-			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li> <?php } else{ ?> <li><div align="left: 150px";><a href="logout.php">Logout</a></div></li>
+			<?php }?>
 			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
 			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
 		</ul>
@@ -100,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
 				<h1><a href="index.php"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
-			</div>
+			</div><div align=right><h2><br><i><?php if(!isset($_SESSION['name']) || empty($_SESSION['name'])){echo "Welcome, Guest!";} else { echo "Welcome, " . $user; }?></i></br></h2></div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
 						<ul class="social-nav model-3d-0 footer-social w3_agile_social">
