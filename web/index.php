@@ -1,6 +1,7 @@
 <?php
 include('config.php');
 
+
 if (!empty($_POST['signup']))
 {
 
@@ -35,24 +36,74 @@ $conn->close();
 }
 if(!empty($_POST["login"])) 
 {
-	$conn = mysqli_connect("localhost","root","123","Shop")
+	$conn = mysql_connect("localhost","root","123")
 	or die('Error Connecting to Database on the SQL Server');
+	mysql_select_db("Shop")or die("cannot select DB");
 	$email=$_POST['email'];
 	$password=$_POST['password'];
 
-	$query = mysqli_query($conn,'SELECT name FROM user WHERE email="'.$email.'" AND password="'.$password.'"');
-	$name = mysqli_fetch_row($query);
-	if (mysqli_num_rows($query) == 1) 
+	$query = "SELECT name FROM user WHERE email='$email' AND password='$password'";
+	$result = mySQL_query($query);
+        $name = mysql_fetch_row($result);
+	if (mysql_num_rows($result) >0) 
 	{
+		
 		session_start();
-		$user = $_SESSION['name'] = $name[0];
-		//header("Location: index.php");
+		$_SESSION['name'] = $name[0];
+		header("Location: index.php");
 	}
 	else
 	{
 		echo "<script type='text/javascript'>alert('Email or password is incorrect.')</script>";
+		header("Location: index.php");
 	}
 $conn->close();
+}
+
+if(!empty($_POST["submit"]))
+{
+	 
+	  $search=$_GET['search']; 
+	  //connect  to the database 
+	  $conn = mysql_connect("localhost","root","123")or die('Error Connecting to Database on the SQL Server');
+	  //-select  the database to use 
+	  mysql_select_db("Shop")or die("cannot select DB");
+	  //-query  the database table 
+	 //error  $sql="SELECT * FROM product WHERE pname LIKE "'%' $search '%'""; 
+	  //-run  the query against the mysql query function 
+	  $result=mysql_query($sql); 
+	  //-create  while loop and loop through result set 
+	  while($row=mysql_fetch_array($result)){ 
+	          $pname  =$row['pname'];  
+	  //-display the result of the array 
+	  echo "<ul>\n"; 
+	  echo "<li>"   .$pname . "</a></li>\n";
+	  echo "</ul>";
+	  }
+	  
+}
+
+if(!empty($_POST["submit2"]))
+{
+	  //echo "hello";
+          $email2=$_POST['email2'];
+          //connect  to the database
+          $conn = mysql_connect("localhost","root","123")or die('Error Connecting to Database on the SQL Server');
+          //-select  the database to use
+          mysql_select_db("Shop")or die("cannot select DB");
+          //-query  the database table
+          $query="INSERT INTO subscribe (email) VALUES ('$email2')";
+          //-create  while loop and loop through result set
+          $result=mysql_query($query,$conn);
+
+	 if(! $result ) {
+         die('Could not enter data: ' . mysql_error());
+   	}
+   
+   	echo "Entered data successfully\n";
+
+mysql_close($conn);
+
 }
 
 ?>
@@ -96,16 +147,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-bot">
 	<div class="header-bot_inner_wthreeinfo_header_mid">
 		<div class="col-md-4 header-middle">
-			<form action="#" method="post">
+			<form action="index.php" method="get">
 					<input type="search" name="search" placeholder="Search here..." required="">
-					<input type="submit" value=" ">
+					<input type="submit" name="submit">
 				<div class="clearfix"></div>
 			</form>
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
 				<h1><a href="index.php"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
-			</div><div align=right><h2><br><i><?php if(!isset($_SESSION['name']) || empty($_SESSION['name'])){echo "Welcome, Guest!";} else { echo "Welcome, " . $user; }?></i></br></h2></div>
+			</div><div align=right><h2><br><i><?php if(!isset($_SESSION['name']) || empty($_SESSION['name'])){echo "Welcome, Guest!";} else { echo "Welcome, " . $_SESSION['name']; }?></i></br></h2></div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
 						<ul class="social-nav model-3d-0 footer-social w3_agile_social">
@@ -1995,9 +2046,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>SIGN UP FOR NEWSLETTER !</h3>
 			</div>
 			<div class="col-sm-6 newsright">
-				<form action="#" method="post">
-					<input type="email" placeholder="Enter your email..." name="email" required="">
-					<input type="submit" value="Submit">
+				<form action="index.php" method="post">
+					<input type="text" placeholder="Enter your email..." name="email2" required="">
+					<input type="submit" name="submit2" >
 				</form>
 			</div>
 
