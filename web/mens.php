@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.html"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+				<h1><a href="index.php"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
 			</div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
@@ -94,35 +94,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav menu__list">
-					<li class="active menu__item"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-					<li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
+					<li class="active menu__item"><a class="menu__link" href="index.php">Home <span class="sr-only">(current)</span></a></li>
+					<li class=" menu__item"><a class="menu__link" href="about.php">About</a></li>
 					<li class="dropdown menu__item menu__item--current">
 						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men's wear <span class="caret"></span></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="agile_inner_drop_nav_info">
 									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-										<a href="mens.html"><img src="images/top2.jpg" alt=" "/></a>
+										<a href="mens.php"><img src="images/top2.jpg" alt=" "/></a>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Clothing</a></li>
-											<li><a href="mens.html">Wallets</a></li>
-											<li><a href="mens.html">Footwear</a></li>
-											<li><a href="mens.html">Watches</a></li>
-											<li><a href="mens.html">Accessories</a></li>
-											<li><a href="mens.html">Bags</a></li>
-											<li><a href="mens.html">Caps & Hats</a></li>
+											<li><a href="mens.php">Clothing</a></li>
+											<li><a href="mens.php">Wallets</a></li>
+											<li><a href="mens.php">Footwear</a></li>
+											<li><a href="mens.php">Watches</a></li>
+											<li><a href="mens.php">Accessories</a></li>
+											<li><a href="mens.php">Bags</a></li>
+											<li><a href="mens.php">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Jewellery</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Perfumes</a></li>
-											<li><a href="mens.html">Beauty</a></li>
-											<li><a href="mens.html">Shirts</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Swimwear</a></li>
+											<li><a href="mens.php">Jewellery</a></li>
+											<li><a href="mens.php">Sunglasses</a></li>
+											<li><a href="mens.php">Perfumes</a></li>
+											<li><a href="mens.php">Beauty</a></li>
+											<li><a href="mens.php">Shirts</a></li>
+											<li><a href="mens.php">Sunglasses</a></li>
+											<li><a href="mens.php">Swimwear</a></li>
 										</ul>
 									</div>
 									<div class="clearfix"></div>
@@ -135,28 +135,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="agile_inner_drop_nav_info">
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="womens.html">Clothing</a></li>
-											<li><a href="womens.html">Wallets</a></li>
-											<li><a href="womens.html">Footwear</a></li>
-											<li><a href="womens.html">Watches</a></li>
-											<li><a href="womens.html">Accessories</a></li>
-											<li><a href="womens.html">Bags</a></li>
-											<li><a href="womens.html">Caps & Hats</a></li>
+											<li><a href="womens.php">Clothing</a></li>
+											<li><a href="womens.php">Wallets</a></li>
+											<li><a href="womens.php">Footwear</a></li>
+											<li><a href="womens.php">Watches</a></li>
+											<li><a href="womens.php">Accessories</a></li>
+											<li><a href="womens.php">Bags</a></li>
+											<li><a href="womens.php">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="womens.html">Jewellery</a></li>
-											<li><a href="womens.html">Sunglasses</a></li>
-											<li><a href="womens.html">Perfumes</a></li>
-											<li><a href="womens.html">Beauty</a></li>
-											<li><a href="womens.html">Shirts</a></li>
-											<li><a href="womens.html">Sunglasses</a></li>
-											<li><a href="womens.html">Swimwear</a></li>
+											<li><a href="womens.php">Jewellery</a></li>
+											<li><a href="womens.php">Sunglasses</a></li>
+											<li><a href="womens.php">Perfumes</a></li>
+											<li><a href="womens.php">Beauty</a></li>
+											<li><a href="womens.php">Shirts</a></li>
+											<li><a href="womens.php">Sunglasses</a></li>
+											<li><a href="womens.php">Swimwear</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-6 multi-gd-img multi-gd-text ">
-										<a href="womens.html"><img src="images/top1.jpg" alt=" "/></a>
+										<a href="womens.php"><img src="images/top1.jpg" alt=" "/></a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -165,11 +165,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li class="menu__item dropdown">
 					   <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
 								<ul class="dropdown-menu agile_short_dropdown">
-									<li><a href="icons.html">Web Icons</a></li>
-									<li><a href="typography.html">Typography</a></li>
+									<li><a href="icons.php">Web Icons</a></li>
+									<li><a href="typography.php">Typography</a></li>
 								</ul>
 					</li>
-					<li class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+					<li class=" menu__item"><a class="menu__link" href="contact.php">Contact</a></li>
 				  </ul>
 				</div>
 			  </div>
@@ -312,7 +312,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="agile_inner_breadcrumb">
 
 						   <ul class="w3_short">
-								<li><a href="index.html">Home</a><i>|</i></li>
+								<li><a href="index.php">Home</a><i>|</i></li>
 								<li>Men's Wear</li>
 							</ul>
 						 </div>
@@ -342,32 +342,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul>
 							<li><input type="checkbox" id="item-0-0" /><label for="item-0-0"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Ethnic Wear</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Caps</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
-									<li><a href="mens.html">Trousers</a></li>
+									<li><a href="mens.php">Shirts</a></li>
+									<li><a href="mens.php">Caps</a></li>
+									<li><a href="mens.php">Shoes</a></li>
+									<li><a href="mens.php">Pants</a></li>
+									<li><a href="mens.php">SunGlasses</a></li>
+									<li><a href="mens.php">Trousers</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox"  id="item-0-1" /><label for="item-0-1"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Party Wear</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Caps</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
-									<li><a href="mens.html">Trousers</a></li>
+									<li><a href="mens.php">Shirts</a></li>
+									<li><a href="mens.php">Caps</a></li>
+									<li><a href="mens.php">Shoes</a></li>
+									<li><a href="mens.php">Pants</a></li>
+									<li><a href="mens.php">SunGlasses</a></li>
+									<li><a href="mens.php">Trousers</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox"  id="item-0-2" /><label for="item-0-2"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Casual Wear</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Caps</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
-									<li><a href="mens.html">Trousers</a></li>
+									<li><a href="mens.php">Shirts</a></li>
+									<li><a href="mens.php">Caps</a></li>
+									<li><a href="mens.php">Shoes</a></li>
+									<li><a href="mens.php">Pants</a></li>
+									<li><a href="mens.php">SunGlasses</a></li>
+									<li><a href="mens.php">Trousers</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -376,10 +376,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul>
 							<li><input type="checkbox" checked="checked" id="item-1-0" /><label for="item-1-0"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> New Arrivals</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="mens.php">Shirts</a></li>
+									<li><a href="mens.php">Shoes</a></li>
+									<li><a href="mens.php">Pants</a></li>
+									<li><a href="mens.php">SunGlasses</a></li>
 								</ul>
 							</li>
 							
@@ -389,26 +389,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul>
 							<li><input type="checkbox"  id="item-2-0" /><label for="item-2-0"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Summer Discount Sales</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="mens.php">Shirts</a></li>
+									<li><a href="mens.php">Shoes</a></li>
+									<li><a href="mens.php">Pants</a></li>
+									<li><a href="mens.php">SunGlasses</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox" id="item-2-1" /><label for="item-2-1"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Exciting Offers</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="mens.php">Shirts</a></li>
+									<li><a href="mens.php">Shoes</a></li>
+									<li><a href="mens.php">Pants</a></li>
+									<li><a href="mens.php">SunGlasses</a></li>
 								</ul>
 							</li>
 							<li><input type="checkbox" id="item-2-2" /><label for="item-2-2"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Flat Discounts</label>
 								<ul>
-									<li><a href="mens.html">Shirts</a></li>
-									<li><a href="mens.html">Shoes</a></li>
-									<li><a href="mens.html">Pants</a></li>
-									<li><a href="mens.html">SunGlasses</a></li>
+									<li><a href="mens.php">Shirts</a></li>
+									<li><a href="mens.php">Shoes</a></li>
+									<li><a href="mens.php">Pants</a></li>
+									<li><a href="mens.php">SunGlasses</a></li>
 								</ul>
 							</li>
 						</ul>
