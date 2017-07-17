@@ -45,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--/tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="ShopShopLah Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -64,8 +64,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<ul>
 		    <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
 			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
-			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
-			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : +65 6888 8888</li>
+			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@shopshoplah.com</a></li>
 		</ul>
 	</div>
 </div>
@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.php"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+				<h1><a href="index.php"><span>S</span>hopShopLah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
 			</div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
@@ -361,21 +361,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="contact-grid-agile-w31">
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
 							<h4>Address</h4>
-							<p>12K Street, 45 Building Road <span>California, USA.</span></p>
+							<p>79 Ayer Rajah Crescent, #01-03, Singapore 139955</span></p>
 						</div>
 					</div>
 					<div class="col-md-4 contact-grid-agile-w3">
 						<div class="contact-grid-agile-w32">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 							<h4>Call Us</h4>
-							<p>+1234 758 839<span>+1273 748 730</span></p>
+							<p>+1234 758 839<span>+65 6888 8888</span></p>
 						</div>
 					</div>
 					<div class="col-md-4 contact-grid-agile-w3">
 						<div class="contact-grid-agile-w33">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<h4>Email</h4>
-							<p><a href="mailto:info@example.com">info@example1.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+							<p><a href="mailto:info@shopshoplah.com">info@example1.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -384,7 +384,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 	   <div class="contact-w3-agile1 map" data-aos="flip-right">
 			
-		   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100949.24429313939!2d-122.44206553967531!3d37.75102885910819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1472190196783" class="map" style="border:0" allowfullscreen=""></iframe>
+		   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.1986294730872!2d103.78692098808943!3d1.2980111999405508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a4fe45692e5%3A0xc90d9ee9e29fd8c2!2s79+Ayer+Rajah+Crescent%2C+Block+79%2C+Singapore+139955!5e0!3m2!1sen!2ssg!4v1500286024374" class="map" style="border:0" allowfullscreen=""></iframe>
 	   </div>
    <div class="banner_bottom_agile_info">
 	<div class="container">
@@ -395,14 +395,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="mail-agileits-w3layouts">
 								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
 								<div class="contact-right">
-									<p>Telephone </p><span>+1 (100)222-23-33</span>
+									<p>Telephone </p><span>+65 6888 8888</span>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="mail-agileits-w3layouts">
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
 								<div class="contact-right">
-									<p>Mail </p><a href="mailto:info@example.com">info@example.com</a>
+									<p>Mail </p><a href="mailto:info@example.com">info@shopshoplah.com</a>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -486,7 +486,7 @@ while($query->fetch() && $i<5)
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>FREE SHIPPING</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Our products are shipped through a portal that is located nowhere</p>
 					</div>
 				</div>
 				<div class="col-md-3 w3layouts_mail_grid_left">
@@ -495,7 +495,7 @@ while($query->fetch() && $i<5)
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>24/7 SUPPORT</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>You can contact us through prayers. Hopefully we hear them! God bless!</p>
 					</div>
 				</div>
 				<div class="col-md-3 w3layouts_mail_grid_left">
@@ -504,7 +504,7 @@ while($query->fetch() && $i<5)
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>MONEY BACK GUARANTEE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Congratulations! You have been happily cheated! See you again!</p>
 					</div>
 				</div>
 					<div class="col-md-3 w3layouts_mail_grid_left">
@@ -513,7 +513,7 @@ while($query->fetch() && $i<5)
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>FREE GIFT COUPONS</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Wait for 1000 years for a MILLION DOLLAR coupons! Stay tune!</p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -526,10 +526,8 @@ while($query->fetch() && $i<5)
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
 		<div class="col-md-3 footer-left">
-			<h2><a href="index.php"><span>E</span>lite Shoppy </a></h2>
-			<p>Lorem ipsum quia dolor
-			sit amet, consectetur, adipisci velit, sed quia non 
-			numquam eius modi tempora.</p>
+			<h2><a href="index.php"><span>S</span>hopShopLah </a></h2>
+			<p>Created for testing purposes, everything you see here is unreal. This website contain products that do not exist at all.</p>
 			<ul class="social-nav model-3d-0 footer-social w3_agile_social two">
 															<li><a href="#" class="facebook">
 																  <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
@@ -568,7 +566,7 @@ while($query->fetch() && $i<5)
 							</div>
 							<div class="w3-address-right">
 								<h6>Phone Number</h6>
-								<p>+1 234 567 8901</p>
+								<p>+65 6888 8888</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -578,7 +576,7 @@ while($query->fetch() && $i<5)
 							</div>
 							<div class="w3-address-right">
 								<h6>Email Address</h6>
-								<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+								<p>Email :<a href="mailto:example@email.com"> mail@shopshoplah.com</a></p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -588,7 +586,7 @@ while($query->fetch() && $i<5)
 							</div>
 							<div class="w3-address-right">
 								<h6>Location</h6>
-								<p>Broome St, NY 10002,California, USA. 
+								<p>79 Ayer Rajah Crescent, #01-03, Singapore 139955
 								
 								</p>
 							</div>
@@ -627,7 +625,7 @@ while($query->fetch() && $i<5)
 
 		<div class="clearfix"></div>
 	</div>
-		<p class="copy-right">&copy 2017 Elite shoppy. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+		<p class="copy-right">&copy 2017 ShopShopLah. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 	</div>
 </div>
 <!-- //footer -->
