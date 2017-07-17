@@ -368,14 +368,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="contact-grid-agile-w32">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 							<h4>Call Us</h4>
-							<p>+1234 758 839<span>+65 6888 8888</span></p>
+							<p>+65 6888 8888<span>+66 6888 8888</span></p>
 						</div>
 					</div>
 					<div class="col-md-4 contact-grid-agile-w3">
 						<div class="contact-grid-agile-w33">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<h4>Email</h4>
-							<p><a href="mailto:info@shopshoplah.com">info@example1.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+							<p><a href="mailto:info@shopshoplah.com">info@shopshoplah.com</a><span><a href="mailto:info@example.com">info@shopshoploh.com</a></span></p>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -409,7 +409,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="mail-agileits-w3layouts">
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
 								<div class="contact-right">
-									<p>Location</p><span>7784 Diamonds street, California, US.</span>
+									<p>Location</p><span>79 Ayer Rajah Crescent, #01-03, Singapore 139955</span>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
