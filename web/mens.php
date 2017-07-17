@@ -500,14 +500,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m8.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Party Men's Blazer</a></h4>
+										<h4><a href="single.php">Party Men's Blazer</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$260.99</span>
 											<del>$390.71</del>
@@ -539,14 +539,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m7.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Analog Watch</a></h4>
+										<h4><a href="single.php">Analog Watch</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$160.99</span>
 											<del>$290.71</del>
@@ -578,14 +578,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/s1.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Running Shoes</a></h4>
+										<h4><a href="single.php">Running Shoes</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$80.99</span>
 											<del>$89.71</del>
@@ -623,14 +623,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m1.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Formal Blue Shirt</a></h4>
+										<h4><a href="single.php">Formal Blue Shirt</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$45.99</span>
 											<del>$69.71</del>
@@ -662,14 +662,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m2.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Gabi Full Sleeve Sweatshirt</a></h4>
+										<h4><a href="single.php">Gabi Full Sleeve Sweatshirt</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$45.99</span>
 											<del>$69.71</del>
@@ -701,14 +701,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m3.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Dark Blue Track Pants</a></h4>
+										<h4><a href="single.php">Dark Blue Track Pants</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$80.99</span>
 											<del>$89.71</del>
@@ -740,14 +740,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m4.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Round Neck Black T-Shirt</a></h4>
+										<h4><a href="single.php">Round Neck Black T-Shirt</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$190.99</span>
 											<del>$159.71</del>
@@ -779,14 +779,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m5.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Men's Black Jeans</a></h4>
+										<h4><a href="single.php">Men's Black Jeans</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$60.99</span>
 											<del>$90.71</del>
@@ -818,14 +818,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m7.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Analog Watch</a></h4>
+										<h4><a href="single.php">Analog Watch</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$160.99</span>
 											<del>$290.71</del>
@@ -857,14 +857,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m6.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Reversible Belt</a></h4>
+										<h4><a href="single.php">Reversible Belt</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$30.99</span>
 											<del>$50.71</del>
@@ -896,14 +896,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/m8.jpg" alt="" class="pro-image-back">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="single.php" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
 											
 									</div>
 									<div class="item-info-product ">
-										<h4><a href="single.html">Party Men's Blazer</a></h4>
+										<h4><a href="single.php">Party Men's Blazer</a></h4>
 										<div class="info-product-price">
 											<span class="item_price">$260.99</span>
 											<del>$390.71</del>
@@ -983,7 +983,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
 		<div class="col-md-3 footer-left">
-			<h2><a href="index.html"><span>E</span>lite Shoppy </a></h2>
+			<h2><a href="index.php"><span>E</span>lite Shoppy </a></h2>
 			<p>Lorem ipsum quia dolor
 			sit amet, consectetur, adipisci velit, sed quia non 
 			numquam eius modi tempora.</p>
@@ -1007,12 +1007,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-4 sign-gd">
 					<h4>Our <span>Information</span> </h4>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="mens.html">Men's Wear</a></li>
-						<li><a href="womens.html">Women's wear</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="typography.html">Short Codes</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="mens.php">Men's Wear</a></li>
+						<li><a href="womens.php">Women's wear</a></li>
+						<li><a href="about.php">About</a></li>
+						<li><a href="typography.php">Short Codes</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 				
@@ -1056,15 +1056,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 sign-gd flickr-post">
 					<h4>Flickr <span>Posts</span></h4>
 					<ul>
-						<li><a href="single.html"><img src="images/t1.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t3.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t4.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t1.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t3.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/t4.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t1.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t3.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t4.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t1.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t3.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/t4.jpg" alt=" " class="img-responsive" /></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
