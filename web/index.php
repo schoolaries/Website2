@@ -69,7 +69,7 @@ if(!empty($_POST["submit"]))
 	  //-select  the database to use 
 	  mysql_select_db("Shop")or die("cannot select DB");
 	  //-query  the database table 
-	 //error  $sql="SELECT * FROM product WHERE pname LIKE "'%' $search '%'""; 
+	  $sql="SELECT * FROM product WHERE pname LIKE '%$search%'"; 
 	  //-run  the query against the mysql query function 
 	  $result=mysql_query($sql); 
 	  //-create  while loop and loop through result set 

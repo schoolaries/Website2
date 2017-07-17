@@ -1,3 +1,42 @@
+<?php
+//include('config.php');
+
+        $con = new mysqli("localhost","root","123","Shop");
+        if ($con->connect_error)
+        {
+          die("Connection failed: " . $con->connect_error);
+//		echo "die";
+        }
+
+	if(!empty($_GET['SUBMIT']))
+	{
+		$Name=$_GET["Name"];
+		$Email=$_GET["Email"];
+                $Subject=$_GET["Subject"];
+                $Message=$_GET["Message"];
+
+		if( $Name && $Email && $Subject && $Message)
+		{
+			$query = $con->prepare("insert into contact(id, Name, Email,Subject,Message) values(null,?,?,?,?);");
+			$query->bind_param('ssss', $Name, $Email,$Subject,$Message );
+			$query->execute();
+			unset($_GET['SUBMIT']);
+		}
+		else
+		{
+			echo "Please key in your comments before submitting. ";
+		}
+	}
+/*
+$query = $con->prepare("SELECT * from contact;");
+$query->execute();
+$query->bind_result($id,$Name, $Email, $Subject, $Message);
+$i=0;
+wh	
+?>
+
+
+
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -397,7 +436,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md-6 contact-form">
 						<h4 class="white-w3ls">Contact <span>Form</span></h4>
-						<form action="#" method="post">
+						<form action="contact.php" method="get">
 							<div class="styled-input agile-styled-input-top">
 								<input type="text" name="Name" required="">
 								<label>Name</label>
@@ -414,18 +453,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span></span>
 							</div>
 							<div class="styled-input">
-								<textarea name="Message" required=""></textarea>
+								<input type="text" name="Message" required="">
 								<label>Message</label>
 								<span></span>
 							</div>	 
-							<input type="submit" value="SEND">
+							<input type="submit" name="SUBMIT" value="SEND">
 						</form>
+<?php
+$query = $con->prepare("SELECT * from contact;");
+$query->execute();
+$query->bind_result($id,$Name, $Email, $Subject, $Message);
+$i=0;
+while($query->fetch() && $i<5)
+{
+
+	echo "Message: " . $Message . "<br>" ;
+
+        $i++;
+}
+?>
+
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
        </div>
 	</div>
+
  <!--//contact-->
 <!--/grids-->
 <div class="coupons">
