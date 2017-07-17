@@ -135,8 +135,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
 			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li> <?php } else{ ?> <li><div align="left: 150px";><a href="logout.php">Logout</a></div></li>
 			<?php }?>
-			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
-			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : +65 6888 8888</li>
+			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@shopshoplah.com</a></li>
 		</ul>
 	</div>
 </div>
@@ -153,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.php"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+				<h1><a href="index.php"><span>S</span>hop<span>S</span>hoplah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
 			</div><div align=right><h2><br><i><?php if(!isset($_SESSION['name']) || empty($_SESSION['name'])){echo "Welcome, Guest!";} else { echo "Welcome, " . $_SESSION['name']; }?></i></br></h2></div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
@@ -529,8 +529,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-6 agileits_schedule_bottom_right">
 			<div class="w3ls_schedule_bottom_right_grid">
 				<h3>Save up to <span>50%</span> in this week</h3>
-				<p>Suspendisse varius turpis efficitur erat laoreet dapibus. 
-					Mauris sollicitudin scelerisque commodo.Nunc dapibus mauris sed metus finibus posuere.</p>
+				<p>ShopShopLah is now on SALE! For every $1,000,000 you spent, you will 1 month worth of oxygen around your enviroment!</p>
 				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
 					<i class="fa fa-user-o" aria-hidden="true"></i>
 					<h4>Customers</h4>
@@ -1911,7 +1910,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>FREE SHIPPING</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Our products are shipped through a portal that is located nowhere</p>
 					</div>
 				</div>
 				<div class="col-md-3 w3layouts_mail_grid_left">
@@ -1920,7 +1919,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>24/7 SUPPORT</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>You can contact us through prayers. Hopefully we hear them! God bless!</p>
 					</div>
 				</div>
 				<div class="col-md-3 w3layouts_mail_grid_left">
@@ -1929,7 +1928,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>MONEY BACK GUARANTEE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Congratulations! You have been happily cheated! See you again! </p>
 					</div>
 				</div>
 					<div class="col-md-3 w3layouts_mail_grid_left">
@@ -1938,7 +1937,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>FREE GIFT COUPONS</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Wait for 1000 years for a MILLION DOLLAR coupons! Stay tune!</p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -1951,10 +1950,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
 		<div class="col-md-3 footer-left">
-			<h2><a href="index.php"><span>E</span>lite Shoppy </a></h2>
-			<p>Lorem ipsum quia dolor
-			sit amet, consectetur, adipisci velit, sed quia non 
-			numquam eius modi tempora.</p>
+			<h2><a href="index.php"><span>S</span>hopShopLah </a></h2>
+			<p>Created for testing purposes, everything you see here is unreal.
+			This website contain products that do not exist at all.</p>
 			<ul class="social-nav model-3d-0 footer-social w3_agile_social two">
 															<li><a href="#" class="facebook">
 																  <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
@@ -1993,7 +1991,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="w3-address-right">
 								<h6>Phone Number</h6>
-								<p>+1 234 567 8901</p>
+								<p>+65 6888 888</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -2003,7 +2001,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="w3-address-right">
 								<h6>Email Address</h6>
-								<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+								<p>Email :<a href="mailto:example@email.com"> info@shopshoplah.com</a></p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -2013,7 +2011,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="w3-address-right">
 								<h6>Location</h6>
-								<p>Broome St, NY 10002,California, USA. 
+								<p>79 Ayer Rajah Crescent, #01-03, Singapore 139955
 								
 								</p>
 							</div>
@@ -2044,15 +2042,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>SIGN UP FOR NEWSLETTER !</h3>
 			</div>
 			<div class="col-sm-6 newsright">
-				<form action="index.php" method="post">
-					<input type="text" placeholder="Enter your email..." name="email2" required="">
+				<form action="#" method="post">
+					<input type="email" placeholder="Enter your email..." name="email2" required="">
 					<input type="submit" name="submit2" >
 				</form>
 			</div>
 
 		<div class="clearfix"></div>
 	</div>
-		<p class="copy-right">&copy 2017 Elite shoppy. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+		<p class="copy-right">&copy 2017 ShopShopLah. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 	</div>
 </div>
 <!-- //footer -->
