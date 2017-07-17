@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 
-
+//Sign up account
 if (!empty($_POST['signup']))
 {
 
@@ -34,6 +34,8 @@ if (!empty($_POST['signup']))
 $conn->close();
 
 }
+
+//Login account
 if(!empty($_POST["login"])) 
 {
 	$conn = mysql_connect("localhost","root","123")
@@ -60,8 +62,10 @@ if(!empty($_POST["login"]))
 $conn->close();
 }
 
-if(!empty($_POST["submit"]))
+//Search bar
+if(!empty($_GET["searchSubmit"]))
 {
+<<<<<<< HEAD
 	 
 	  $search=$_GET['search']; 
 	  //connect  to the database 
@@ -80,9 +84,25 @@ if(!empty($_POST["submit"]))
 	  echo "<li>"   .$pname . "</a></li>\n";
 	  echo "</ul>";
 	  }
+=======
+>>>>>>> b6be03c1793d7858cfbfca46f0bc7736f28d1330
 	  
+	$search=$_GET['search'];
+	//echo $search;
+	//connect  to the database 
+	$conn = mysql_connect("localhost","root","123")or die('Error Connecting to Database on the SQL Server');
+	//-select  the database to use 
+	mysql_select_db("Shop")or die("cannot select DB");
+	$sql = "SELECT * FROM products where name LIKE '%" .$search."%'";
+	$r_query = mysql_query($sql);
+	
+	while($row = mysql_fetch_array($r_query))
+	{
+		echo "Name: " .$row['name'];
+		echo "<br /> Description: " .$row['description'];
+		echo "<br /> Price: " .$row['price'];
+	}
 }
-
 if(!empty($_POST["submit2"]))
 {
 	  //echo "hello";
@@ -147,9 +167,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-bot">
 	<div class="header-bot_inner_wthreeinfo_header_mid">
 		<div class="col-md-4 header-middle">
-			<form action="index.php" method="get">
+			<form action="" method="get">
 					<input type="search" name="search" placeholder="Search here..." required="">
-					<input type="submit" name="submit">
+					<input type="submit"  value=" " name="searchSubmit">
 				<div class="clearfix"></div>
 			</form>
 		</div>
