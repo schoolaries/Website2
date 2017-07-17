@@ -27,12 +27,7 @@
 			echo "Please key in your comments before submitting. ";
 		}
 	}
-/*
-$query = $con->prepare("SELECT * from contact;");
-$query->execute();
-$query->bind_result($id,$Name, $Email, $Subject, $Message);
-$i=0;
-wh	
+	
 ?>
 
 

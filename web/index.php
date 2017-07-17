@@ -65,28 +65,6 @@ $conn->close();
 //Search bar
 if(!empty($_GET["searchSubmit"]))
 {
-<<<<<<< HEAD
-	 
-	  $search=$_GET['search']; 
-	  //connect  to the database 
-	  $conn = mysql_connect("localhost","root","123")or die('Error Connecting to Database on the SQL Server');
-	  //-select  the database to use 
-	  mysql_select_db("Shop")or die("cannot select DB");
-	  //-query  the database table 
-	  $sql="SELECT * FROM product WHERE pname LIKE '%$search%'"; 
-	  //-run  the query against the mysql query function 
-	  $result=mysql_query($sql); 
-	  //-create  while loop and loop through result set 
-	  while($row=mysql_fetch_array($result)){ 
-	          $pname  =$row['pname'];  
-	  //-display the result of the array 
-	  echo "<ul>\n"; 
-	  echo "<li>"   .$pname . "</a></li>\n";
-	  echo "</ul>";
-	  }
-=======
->>>>>>> b6be03c1793d7858cfbfca46f0bc7736f28d1330
-	  
 	$search=$_GET['search'];
 	//echo $search;
 	//connect  to the database 
