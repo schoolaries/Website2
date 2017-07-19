@@ -7,11 +7,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Elite Shoppy an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+<title>ShopShopLah an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
 <!--/tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="ShopShopLah Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -33,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<ul>
 		    <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
 			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
-			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
+			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : +65 6888 8888</li>
 			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
 		</ul>
 	</div>
@@ -51,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.php"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+				<h1><a href="index.php"><span>S</span>hopShopLah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
 			</div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
@@ -444,9 +444,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					   <div class="tab1">
 
 							<div class="single_page_agile_its_w3ls">
-							  <h6>Lorem ipsum dolor sit amet</h6>
-							   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
-							   <p class="w3ls_para">Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
+							  <h6>Big Wing Sneakers</h6>
+							   <p>This is a blue shoe name Big Wing Sneaker, i do not see any wing on it and do not have any idea why it is called Big Wing Sneaker. This shoe may looks normal but this shoe don't look very clear. This shoe will cause alot trouble to you espeically if you attempt to buy.</p>
+							   <p class="w3ls_para">The weird design of this shoe makes this shoe extremely good for display to scare away customers who wants to shop for shoe. The material used to design this shoe is still unknown and may cause your feet to rot.</p>
 							</div>
 						</div>
 						<!--//tab_one-->
@@ -460,12 +460,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="bootstrap-tab-text-grid-right">
 											<ul>
-												<li><a href="#">Admin</a></li>
+												<li><a href="#">Designer</a></li>
 												<li><a href="#"><i class="fa fa-reply-all" aria-hidden="true"></i> Reply</a></li>
 											</ul>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
-												suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-												vel eum iure reprehenderit.</p>
+											<p>I am the original creator of this shoe. I have no idea how i created this shoe with no wings yet being called Big Wings Sneaker. The material is unknown as i do not know where did the companyget the material from and what is it call. Most probably this shoe will destroy your feet after 1 hour of wearing it. Thank you for your support!</p>
 										</div>
 										<div class="clearfix"> </div>
 						             </div>
@@ -670,7 +668,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>FREE SHIPPING</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Our products are shipped through a portal that is located nowhere</p>
 					</div>
 				</div>
 				<div class="col-md-3 w3layouts_mail_grid_left">
@@ -679,7 +677,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>24/7 SUPPORT</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>You can contact us through prayers. Hopefully we hear them! God bless!</p>
 					</div>
 				</div>
 				<div class="col-md-3 w3layouts_mail_grid_left">
@@ -688,7 +686,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>MONEY BACK GUARANTEE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Congratulations! You have been happily cheated! See you again!</p>
 					</div>
 				</div>
 					<div class="col-md-3 w3layouts_mail_grid_left">
@@ -697,7 +695,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3layouts_mail_grid_left2">
 						<h3>FREE GIFT COUPONS</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
+						<p>Wait for 1000 years for a MILLION DOLLAR coupons! Stay tune!</p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -710,10 +708,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
 		<div class="col-md-3 footer-left">
-			<h2><a href="index.php"><span>E</span>lite Shoppy </a></h2>
-			<p>Lorem ipsum quia dolor
-			sit amet, consectetur, adipisci velit, sed quia non 
-			numquam eius modi tempora.</p>
+			<h2><a href="index.php"><span>S</span>hopShopLah</a></h2>
+			<p>Created for testing purposes, everything you see here is unreal. This website contain products that do not exist at all.</p>
 			<ul class="social-nav model-3d-0 footer-social w3_agile_social two">
 															<li><a href="#" class="facebook">
 																  <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
@@ -752,7 +748,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="w3-address-right">
 								<h6>Phone Number</h6>
-								<p>+1 234 567 8901</p>
+								<p>+65 6888 8888</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -762,7 +758,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="w3-address-right">
 								<h6>Email Address</h6>
-								<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+								<p>Email :<a href="mailto:example@email.com"> mail@shopshoplah.com</a></p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -772,7 +768,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="w3-address-right">
 								<h6>Location</h6>
-								<p>Broome St, NY 10002,California, USA. 
+								<p>79 Ayer Rajah Crescent, #01-03, Singapore 139955 
 								
 								</p>
 							</div>
@@ -811,7 +807,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<div class="clearfix"></div>
 	</div>
-		<p class="copy-right">&copy 2017 Elite shoppy. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+		<p class="copy-right">&copy 2017 ShopShopLah. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 	</div>
 </div>
 <!-- //footer -->
