@@ -2033,14 +2033,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="col-md-3 sign-gd flickr-post">
-					<h4>Flickr <span>Posts</span></h4>
+					<h4>Our <span>Friends</span></h4>
 					<ul>
 						<li><a href="single.php"><img src="images/t1.jpg" alt=" " class="img-responsive" /></a></li>
 						<li><a href="single.php"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.php"><img src="images/t3.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/joel1.jpg" alt=" " class="img-responsive" /></a></li>
 						<li><a href="single.php"><img src="images/t4.jpg" alt=" " class="img-responsive" /></a></li>
 						<li><a href="single.php"><img src="images/t1.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.php"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.php"><img src="images/joel2.jpg" alt=" " class="img-responsive" /></a></li>
 						<li><a href="single.php"><img src="images/t3.jpg" alt=" " class="img-responsive" /></a></li>
 						<li><a href="single.php"><img src="images/t2.jpg" alt=" " class="img-responsive" /></a></li>
 						<li><a href="single.php"><img src="images/t4.jpg" alt=" " class="img-responsive" /></a></li>
