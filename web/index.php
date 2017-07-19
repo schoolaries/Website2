@@ -113,7 +113,7 @@ mysql_close($conn);
 
 if ($_SESSION['name']=="admin")
 {
-	header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/admin.php");
+	header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/admin.php");
 }
 
 ?>
@@ -121,11 +121,11 @@ if ($_SESSION['name']=="admin")
 <!DOCTYPE html>
 <html>
 <head>
-<title>Elite Shoppy an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>ShopShopLah an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
 <!--/tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="ShopShopLah Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>

@@ -5,7 +5,7 @@ include('config.php');
 
 if ($_SESSION['name']!="admin")
 {
-        header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/index.php");
+        header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
 }
 //Sign up account
 if (!empty($_POST['signup']))
@@ -56,7 +56,7 @@ if(!empty($_POST["login"]))
                 if ($conn->query($query) === TRUE)
                 {
                         echo "New record created successfully";
-			header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/index.php");
+			header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
                 }
                 else
                 {
@@ -144,7 +144,7 @@ $conn->close();
 }
 else
 {
-        header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/index.php");
+        header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
 }
 
 
@@ -173,11 +173,11 @@ if(isset($_GET['operation']))
 <!DOCTYPE html>
 <html>
 <head>
-<title>Elite Shoppy an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About :: w3layouts</title>
+<title>ShopShopLah an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About :: w3layouts</title>
 <!--/tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="ShopShopLah Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -219,7 +219,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.php"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+				<h1><a href="index.php"><span>S</span>hopShopLah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
 			</div><div align=right><h2><br><i><?php if(!isset($_SESSION['name']) || empty($_SESSION['name'])){echo "Welcome, Guest!";}else { echo "Welcome, " . $_SESSION['name']; }?></i></br></h2></div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
@@ -504,16 +504,16 @@ $connect=mysqli_connect("localhost","root","123","Shop"); //connect to database
 $query=$connect->prepare("select * from user");
 $query->execute();
 $query->bind_result($id, $name,$password,$email,$handphone,$address,$creditno,$code );  //get the input of user and put in database.
-echo "<table align='center' border='1'>";
+echo "<table align='center' border='2'>";
 echo "<tr>";
-echo "<td>ID</td>"; 			//create table  call ID
-echo "<td>name</td>";		//create table  call Question
-echo "<td>password No</td>";		//create table  call Matric_No
-echo "<td>email</td>";			//create table  call Name
-echo "<td>handphone</td>";		//create table  call Contact
-echo "<td>address</td>";		//create table  call Email
-echo "<td>creditno</td>";
-echo "<td>code</td>";  
+echo "<td> ID</td>"; 			//create table  call ID
+echo "<td> Name</td>";		//create table  call Question
+echo "<td> Password</td>";		//create table  call Matric_No
+echo "<td> Email</td>";			//create table  call Name
+echo "<td> Handphone</td>";		//create table  call Contact
+echo "<td> Address</td>";		//create table  call Email
+echo "<td> Creditno</td>";
+echo "<td> Code</td>";  
 echo "</tr>";
 while($query->fetch())   //from the database, fetch the data and display out.
 {
