@@ -113,7 +113,8 @@ mysql_close($conn);
 
 if ($_SESSION['name']=="admin")
 {
-	header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/admin.php");
+	header("Location: admin.php");
+	//header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/admin.php");
 }
 
 ?>

@@ -5,7 +5,8 @@ include('config.php');
 
 if ($_SESSION['name']!="admin")
 {
-        header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
+        //header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
+	header("Location: index.php");
 }
 //Sign up account
 if (!empty($_POST['signup']))
@@ -56,12 +57,14 @@ if(!empty($_POST["login"]))
                 if ($conn->query($query) === TRUE)
                 {
                         echo "New record created successfully";
-			header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
+			header("Location: index.php");
+			//header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
                 }
                 else
                 {
                         echo "Error: " . $sql . "<br>" . $conn->error;
-			header("Location:http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/malicious.php");
+			header("Location: malicious.php");
+			//header("Location:http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/malicious.php");
                 }
 $conn->close();
 
@@ -144,10 +147,9 @@ $conn->close();
 }
 else
 {
-        header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
+	header("Location: index.php");
+        //header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
 }
-
-
 
 
 
@@ -497,36 +499,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <br>
 <br>
-<p style="text-align:center"><font size="50">Admin privilege editing customer database</font></p>
+<p style="text-align:center"><font size="50">Customer Database</font></p>
 
 <?php
 $connect=mysqli_connect("localhost","root","123","Shop"); //connect to database
 $query=$connect->prepare("select * from user");
 $query->execute();
 $query->bind_result($id, $name,$password,$email,$handphone,$address,$creditno,$code );  //get the input of user and put in database.
-echo "<table align='center' border='2'>";
+echo "<table align='center' border='5' style=width:90%>";
 echo "<tr>";
-echo "<td> ID</td>"; 			//create table  call ID
-echo "<td> Name</td>";		//create table  call Question
-echo "<td> Password</td>";		//create table  call Matric_No
-echo "<td> Email</td>";			//create table  call Name
-echo "<td> Handphone</td>";		//create table  call Contact
-echo "<td> Address</td>";		//create table  call Email
-echo "<td> Creditno</td>";
-echo "<td> Code</td>";  
+echo "<th> ID</th>"; 			//create table  call ID
+echo "<th> Name</th>";			//create table  call Question
+echo "<th> Password</th>";		//create table  call Matric_No
+echo "<th> Email</th>";			//create table  call Name
+echo "<th> Handphone</th>";		//create table  call Contact
+echo "<th> Address</th>";		//create table  call Email
+echo "<th> Credit Number</th>";
+echo "<th> Code</th>";
+echo "<th colspan=2> Action</th>";
 echo "</tr>";
 while($query->fetch())   //from the database, fetch the data and display out.
 {
 	echo "<tr>";
-	echo "<td>".$id."</td>";				//Call out the data of ID from database
-	echo "<td>".$name."</td>";			//Call out the data of question from database
-	echo "<td>".$password."</td>";			//Call out the data of matric from database
-	echo "<td>".$email."</td>";				//Call out the data of name from database
-	echo "<td>".$handphone."</td>";			//Call out the data of contact from database
-	echo "<td>".$address."</td>";				//Call out the data of email from database
-        echo "<td>".$creditno."</td>";
-        echo "<td>".$code."</td>";
-	echo "<td><a href='edit.php?operation=edit&id=".$id."&name=".$name."&password=".$password."&email=".$email."&handphone=".$handphone."&address=".$address."&creditno=".$creditno."&code=".$code."'>edit</a></td>";
+	echo "<td align=center>".$id."</td>";				//Call out the data of ID from database
+	echo "<td align=center>".$name."</td>";			//Call out the data of question from database
+	echo "<td align=center>".$password."</td>";			//Call out the data of matric from database
+	echo "<td align=center>".$email."</td>";				//Call out the data of name from database
+	echo "<td align=center>".$handphone."</td>";			//Call out the data of contact from database
+	echo "<td align=center>".$address."</td>";				//Call out the data of email from database
+        echo "<td align=center>".$creditno."</td>";
+        echo "<td align=center>".$code."</td>";
+	echo "<td align=center><a href='edit.php?operation=edit&id=".$id."&name=".$name."&password=".$password."&email=".$email."&handphone=".$handphone."&address=".$address."&creditno=".$creditno."&code=".$code."'>edit</a></td>";
 	echo "<td><a href='admin.php?operation=delete&id=".$id."'>delete</a></td>"; //delete the data by clicking the ahref link.
 	echo "</tr>";
 
