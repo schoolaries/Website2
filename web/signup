@@ -1,0 +1,46 @@
+<form action="index.php" method="post" >
+                                                        <div class="styled-input agile-styled-input-top">
+                                                                <input type="text" name="name" required="">
+                                                                <label>Name</label>
+                                                                <span></span>
+                                                        </div>
+                                                        <div class="styled-input">
+                                                                <input type="email" name="email" required="">
+                                                                <label>Email</label>
+                                                                <span></span>
+                                                        </div>
+                                                        <div class="styled-input">
+                                                                <input type="password" name="password" required="">
+                                                                <label>Password</label>
+                                                                <span></span>
+                                                        </div>
+                                                        <div class="styled-input">
+                                                                <input type="password" name="confirmPassword" required="">
+                                                                <label>Confirm Password</label>
+                                                                <span></span>
+                                                        </div>
+                                                        <div class="styled-input">
+                                                                <input type="text" name="handphone" required="">
+                                                                <label>Handphone</label>
+                                                                <span></span>
+                                                        </div>
+                                                        <div class="styled-input">
+                                                                <input type="text" name="address" required="">
+                                                                <label>Address</label>
+                                                                <span></span>
+                                                        </div>
+                                                        <div class="styled-input">
+                                                                <input type="text" name="creditno" required="">
+                                                                <label>Credit Card Number</label>
+                                                                <span></span>
+                                                        </div>
+                                                        <div class="styled-input">
+                                                                <input type="text" name="code" required="">
+                                                                <label>CVC</label>
+                                                                <span></span>
+                                                        </div>
+                                                        </div>
+                                                        <input type="submit" value="sign up" name="signup">
+                                                </form>
+
+						

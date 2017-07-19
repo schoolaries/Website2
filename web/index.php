@@ -1,6 +1,5 @@
 <?php
 include('config.php');
-
 //Sign up account
 if (!empty($_POST['signup']))
 {
@@ -40,7 +39,7 @@ if(!empty($_POST["login"]))
 {
 	$conn = mysql_connect("localhost","root","123")
 	or die('Error Connecting to Database on the SQL Server');
-	mysql_select_db("Shop")or die("cannot select DB");
+ 	mysql_select_db("Shop")or die("cannot select DB");
 	$email=$_POST['email'];
 	$password=$_POST['password'];
 
@@ -60,6 +59,14 @@ if(!empty($_POST["login"]))
 		header("Location: index.php");
 	}
 $conn->close();
+}
+
+if (empty($_SESSION["name"]))
+{
+    $_SESSION=array();
+    unset($_SESSION);
+    session_destroy();
+    echo SESSION_id();
 }
 
 //Search bar
@@ -102,6 +109,11 @@ if(!empty($_POST["submit2"]))
 
 mysql_close($conn);
 
+}
+
+if ($_SESSION['name']=="admin")
+{
+	header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/admin.php");
 }
 
 ?>
