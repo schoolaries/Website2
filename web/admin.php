@@ -2,12 +2,6 @@
 <?php
 include('config.php');
 
-
-if ($_SESSION['name']!="admin")
-{
-        //header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
-	header("Location: index.php");
-}
 //Sign up account
 if (!empty($_POST['signup']))
 {
@@ -112,8 +106,7 @@ mysql_close($conn);
 
 }
 
-if ($_SESSION['name']=="admin")
-{
+
 if (!empty($_POST["update"]))
 {
 	$id=$_POST['id'];
@@ -144,13 +137,13 @@ if (!empty($_POST["update"]))
 $conn->close();
 
 }
-}
+/*
 else
 {
 	header("Location: index.php");
         //header("Location: http://ec2-54-201-219-185.us-west-2.compute.amazonaws.com/web/index.php");
 }
-
+*/
 
 
 
@@ -221,7 +214,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.php"><span>S</span>hopShopLah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+				<h1><a href="index.php"><span>S</span>hop<span>S</span>hopLah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
 			</div><div align=right><h2><br><i><?php if(!isset($_SESSION['name']) || empty($_SESSION['name'])){echo "Welcome, Guest!";}else { echo "Welcome, " . $_SESSION['name']; }?></i></br></h2></div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
@@ -334,13 +327,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</ul>
 					</li>
-					<li class="menu__item dropdown">
-					   <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
-								<ul class="dropdown-menu agile_short_dropdown">
-									<li><a href="icons.php">Web Icons</a></li>
-									<li><a href="typography.php">Typography</a></li>
-								</ul>
-					</li>
+					
 					<li class=" menu__item"><a class="menu__link" href="contact.php">Contact</a></li>
 				  </ul>
 				</div>
@@ -618,7 +605,6 @@ echo "</table>";
 						<li><a href="mens.php">Men's Wear</a></li>
 						<li><a href="womens.php">Women's wear</a></li>
 						<li><a href="about.php">About</a></li>
-						<li><a href="typography.php">Short Codes</a></li>
 						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>

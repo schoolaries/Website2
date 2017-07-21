@@ -1,4 +1,113 @@
 <?php
+include('config.php');
+//Sign up account
+if (!empty($_POST['signup']))
+{
+	$name=$_POST['name'];
+	$email=$_POST['email'];
+	$password=$_POST['password'];
+	$confirmpassword=$_POST['confirmpassword'];	
+	$handphone=$_POST['handphone'];
+        $address=$_POST['address'];
+        $creditno=$_POST['creditno'];
+        $code=$_POST['code'];
+	
+	
+	$conn = new mysqli("localhost","root","123","Shop");
+	if ($conn->connect_error) 
+	{
+  	  die("Connection failed: " . $conn->connect_error);
+	} 
+	$query = "INSERT INTO user (name,password,email,handphone,address,creditno,code) VALUES ('$name','$password','$email','$handphone','$address','$creditno','$code')";
+	
+		if ($conn->query($query) === TRUE) 
+		{
+    			echo "New record created successfully";
+		} 
+		else 
+		{
+    			echo "Error: " . $sql . "<br>" . $conn->error;
+		}
+$conn->close();
+}
+//Login account
+if(!empty($_POST["login"])) 
+{
+	$conn = mysql_connect("localhost","root","123")
+	or die('Error Connecting to Database on the SQL Server');
+ 	mysql_select_db("Shop")or die("cannot select DB");
+	$email=$_POST['email'];
+	$password=$_POST['password'];
+	$query = "SELECT name FROM user WHERE email='$email' AND password='$password'";
+	$result = mySQL_query($query);
+        $name = mysql_fetch_row($result);
+	if (mysql_num_rows($result) >0) 
+	{
+		
+		session_start();
+		$_SESSION['name'] = $name[0];
+		header("Location: index.php");
+	}
+	else
+	{
+		echo "<script type='text/javascript'>alert('Email or password is incorrect.')</script>";
+		header("Location: index.php");
+	}
+$conn->close();
+}
+if (empty($_SESSION["name"]))
+{
+    $_SESSION=array();
+    unset($_SESSION);
+    session_destroy();
+    echo SESSION_id();
+}
+//Search bar
+if(!empty($_GET["searchSubmit"]))
+{
+	$search=$_GET['search'];
+	//echo $search;
+	//connect  to the database 
+	$conn = mysql_connect("localhost","root","123")or die('Error Connecting to Database on the SQL Server');
+	//-select  the database to use 
+	mysql_select_db("Shop")or die("cannot select DB");
+	$sql = "SELECT * FROM products where name LIKE '%" .$search."%'";
+	$r_query = mysql_query($sql);
+	
+	while($row = mysql_fetch_array($r_query))
+	{
+		echo "Name: " .$row['name'];
+		echo "<br /> Description: " .$row['description'];
+		echo "<br /> Price: " .$row['price'];
+	}
+}
+if(!empty($_POST["submit2"]))
+{
+	  //echo "hello";
+          $email2=$_POST['email2'];
+          //connect  to the database
+          $conn = mysql_connect("localhost","root","123")or die('Error Connecting to Database on the SQL Server');
+          //-select  the database to use
+          mysql_select_db("Shop")or die("cannot select DB");
+          //-query  the database table
+          $query="INSERT INTO subscribe (email) VALUES ('$email2')";
+          //-create  while loop and loop through result set
+          $result=mysql_query($query,$conn);
+	 if(! $result ) {
+         die('Could not enter data: ' . mysql_error());
+   	}
+   
+   	echo "Entered data successfully\n";
+mysql_close($conn);
+}
+if ($_SESSION['name']=="admin")
+{
+	header("Location: http://ec2-34-211-48-35.us-west-2.compute.amazonaws.com/web/admin.php");
+}
+?>
+
+
+<?php
 //include('config.php');
 
         $con = new mysqli("localhost","root","123","Shop");
@@ -62,8 +171,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header" id="home">
 	<div class="container">
 		<ul>
+			<?php if(!isset($_SESSION['name'])){ ?>
 		    <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
-			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+			<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li> <?php } else{ ?> <li><div align="left: 150px";><a href="logout.php">Logout</a></div></li>
+			<?php }?>
 			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : +65 6888 8888</li>
 			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@shopshoplah.com</a></li>
 		</ul>
@@ -82,8 +193,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.php"><span>S</span>hopShopLah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
-			</div>
+			<h1><a href="index.php"><span>S</span>hop<span>S</span>hoplah <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+			</div><div align=right><h2><br><i><?php if(!isset($_SESSION['name']) || empty($_SESSION['name'])){echo "Welcome, Guest!";} else { echo "Welcome, " . $_SESSION['name']; }?></i></br></h2></div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
 						<ul class="social-nav model-3d-0 footer-social w3_agile_social">
@@ -195,13 +306,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</ul>
 					</li>
-					<li class="menu__item dropdown">
-					   <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
-								<ul class="dropdown-menu agile_short_dropdown">
-									<li><a href="icons.php">Web Icons</a></li>
-									<li><a href="typography.php">Typography</a></li>
-								</ul>
-					</li>
 					<li class=" menu__item menu__item--current"><a class="menu__link" href="contact.php">Contact</a></li>
 				  </ul>
 				</div>
@@ -233,18 +337,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="modal-body modal-body-sub_agile">
 						<div class="col-md-8 modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">Sign In <span>Now</span></h3>
-									<form action="#" method="post">
+									<form action="contact.php" method="post">
 							<div class="styled-input agile-styled-input-top">
-								<input type="text" name="Name" required="">
-								<label>Name</label>
+								<input type="text" name="email" required="">
+								<label>Email</label>
 								<span></span>
 							</div>
 							<div class="styled-input">
-								<input type="email" name="Email" required=""> 
-								<label>Email</label>
+								<input type="password" name="password" required=""> 
+								<label>Password</label>
 								<span></span>
 							</div> 
-							<input type="submit" value="Sign In">
+							<input type="submit" name="login"value="Sign In">
 						</form>
 						  <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
 															<li><a href="#" class="facebook">
@@ -285,14 +389,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="modal-body modal-body-sub_agile">
 						<div class="col-md-8 modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">Sign Up <span>Now</span></h3>
-									<form action="#" method="post">
+									<form action="contact.php" method="post" >
 							<div class="styled-input agile-styled-input-top">
-								<input type="text" name="Name" required="">
+								<input type="text" name="name" required="">
 								<label>Name</label>
 								<span></span>
 							</div>
 							<div class="styled-input">
-								<input type="email" name="Email" required=""> 
+								<input type="email" name="email" required=""> 
 								<label>Email</label>
 								<span></span>
 							</div> 
@@ -302,11 +406,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span></span>
 							</div> 
 							<div class="styled-input">
-								<input type="password" name="Confirm Password" required=""> 
+								<input type="password" name="confirmPassword" required=""> 
 								<label>Confirm Password</label>
 								<span></span>
 							</div> 
-							<input type="submit" value="Sign Up">
+							<div class="styled-input">
+								<input type="text" name="handphone" required=""> 
+								<label>Handphone</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+								<input type="text" name="address" required=""> 
+								<label>Address</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+								<input type="text" name="creditno" required=""> 
+								<label>Credit Card Number</label>
+								<span></span>
+							</div> 
+							<div class="styled-input">
+								<input type="text" name="code" required=""> 
+								<label>CVC</label>
+								<span></span>
+							</div> 
+							<input type="submit" value="sign up" name="signup">
 						</form>
 						  <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
 															<li><a href="#" class="facebook">
@@ -368,14 +492,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="contact-grid-agile-w32">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 							<h4>Call Us</h4>
-							<p>+65 6888 8888<span>+66 6888 8888</span></p>
+							<p><span>+66 6888 8888</span<br><br><br></p>
 						</div>
 					</div>
 					<div class="col-md-4 contact-grid-agile-w3">
 						<div class="contact-grid-agile-w33">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<h4>Email</h4>
-							<p><a href="mailto:info@shopshoplah.com">info@shopshoplah.com</a><span><a href="mailto:info@example.com">info@shopshoploh.com</a></span></p>
+							<p><span><a href="mailto:info@example.com">info@shopshoploh.com</a><br><br></span></p>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -552,7 +676,6 @@ while($query->fetch() && $i<5)
 						<li><a href="mens.php">Men's Wear</a></li>
 						<li><a href="womens.php">Women's wear</a></li>
 						<li><a href="about.php">About</a></li>
-						<li><a href="typography.php">Short Codes</a></li>
 						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>

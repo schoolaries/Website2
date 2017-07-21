@@ -35,23 +35,22 @@ $conn->close();
 }
 
 //Login account
-if(!empty($_POST["login"])) 
+if(!empty($_GET["login"])) 
 {
 	$conn = mysql_connect("localhost","root","123")
 	or die('Error Connecting to Database on the SQL Server');
  	mysql_select_db("Shop")or die("cannot select DB");
-	$email=$_POST['email'];
-	$password=$_POST['password'];
+	$email=$_GET['email'];
+	$password=$_GET['password'];
 
 	$query = "SELECT name FROM user WHERE email='$email' AND password='$password'";
 	$result = mySQL_query($query);
         $name = mysql_fetch_row($result);
 	if (mysql_num_rows($result) >0) 
 	{
-		
 		session_start();
 		$_SESSION['name'] = $name[0];
-		header("Location: index.php");
+		header('Location: index.php?'.session_name()."=".session_id());
 	}
 	else
 	{
@@ -68,8 +67,8 @@ if (empty($_SESSION["name"]))
     session_destroy();
     echo SESSION_id();
 }
-
 //Search bar
+/*
 if(!empty($_GET["searchSubmit"]))
 {
 	$search=$_GET['search'];
@@ -88,6 +87,7 @@ if(!empty($_GET["searchSubmit"]))
 		echo "<br /> Price: " .$row['price'];
 	}
 }
+*/
 if(!empty($_POST["submit2"]))
 {
 	  //echo "hello";
@@ -110,6 +110,7 @@ if(!empty($_POST["submit2"]))
 mysql_close($conn);
 
 }
+
 
 if ($_SESSION['name']=="admin")
 {
@@ -279,13 +280,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</ul>
 					</li>
-					<li class="menu__item dropdown">
-					   <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
-								<ul class="dropdown-menu agile_short_dropdown">
-									<li><a href="icons.php">Web Icons</a></li>
-									<li><a href="typography.php">Typography</a></li>
-								</ul>
-					</li>
+					
 					<li class=" menu__item"><a class="menu__link" href="contact.php">Contact</a></li>
 				  </ul>
 				</div>
@@ -317,7 +312,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="modal-body modal-body-sub_agile">
 						<div class="col-md-8 modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">Sign In <span>Now</span></h3>
-									<form action="index.php" method="post">
+									<form action="index.php" method="get">
 							<div class="styled-input agile-styled-input-top">
 								<input type="text" name="email" required="">
 								<label>Email</label>
@@ -1990,7 +1985,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="mens.php">Men's Wear</a></li>
 						<li><a href="womens.php">Women's wear</a></li>
 						<li><a href="about.php">About</a></li>
-						<li><a href="typography.php">Short Codes</a></li>
 						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>
